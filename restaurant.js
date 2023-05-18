@@ -14,3 +14,6 @@ const menu = {
         
     
 };
+*/ mostrar menu*/
+function displayMenu() {
+    console.log("Menu principal");
