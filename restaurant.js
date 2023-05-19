@@ -35,7 +35,7 @@ console.log(`${entreeOpcion} es ${entree[entreeOpcion]}`)
 
 const sideOpcion = prompt("que quiere de acompañamiento?")
 
-console.log(`sidesComments[sidesOpcion]}`)
+console.log(`${sidesComments[sideOpcion]}`)
 console.log(`tu acompañamiento es ${sides[sideOpcion]}`)
 /* precio total */
 const total = (entree[entreeOpcion] + sides[sideOpcion])
