@@ -28,7 +28,7 @@ const sidesComments ={
 console.log("Bienvenido al restaurante Bottega");
 console.log(`El menu de hoy es ${menuItems(entree)} y de acompañamiento ${menuItems(sides)}`)
 
-const entreeOpcion = prompt(¿Que desea?)
+const entreeOpcion = prompt("¿Que desea?")
 
 console.log(`el ${entreeOpcion} ${entreeComments[entreeOpcion]}`)
 console.log(`${entreeOpcion} es ${entree[entreeOpcion]}`)
