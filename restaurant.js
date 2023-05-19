@@ -15,6 +15,7 @@ const menu = {
     
 };
 */ mostrar menu */
+
 function displayMenu() {
     console.log("Menu principal");
     menu.main.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
@@ -22,8 +23,17 @@ function displayMenu() {
      console.log("\nMenú de Acompañamientos:");
     menu.side.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
   }
+displayMenu();
 
-*/ Función para calcular el precio total */
+*/  calcular el precio total */
+
   function calculateTotal(mainPrice, side1Price, side2Price) {
     return mainPrice + side1Price + side2Price;
   }
+
+/* obtener comentarios aleatorios */
+
+  function getRandomComment() {
+    return menu.comments[Math.floor(Math.random() * menu.comments.length)];
+  }
+  
