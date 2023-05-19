@@ -40,4 +40,4 @@ console.log(`tu acompañamiento es ${sides[sideOpcion]}`)
 /* precio total */
 const total = (entree[entreeOpcion] + sides[sideOpcion])
 
-console.log(`èl total de este ${entreeOpcion} y {sideOpcion} será ${total}`)
+console.log(`èl total de este ${entreeOpcion} y ${sideOpcion} será ${total}`)
