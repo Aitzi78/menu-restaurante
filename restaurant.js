@@ -20,7 +20,7 @@ function displayMenu() {
     console.log("Menu principal");
     menu.main.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
 
-     console.log("\nMenú de Acompañamientos:");
+     console.log("Menú Acompañamientos");
     menu.side.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
   }
 displayMenu();
