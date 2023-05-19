@@ -7,7 +7,7 @@ const sides = {
  "fritos": 9,
  "tortilla": 12
 };
-
+/* mostrar mmenu */
 const menuItems = menu =>{
   let menuString =[]
   Object.keys(menu).map(item =>{
@@ -37,7 +37,7 @@ const sideOpcion = prompt("que quiere de acompañamiento?")
 
 console.log(`sidesComments[sidesOpcion]}`)
 console.log(`tu acompañamiento es ${sides[sideOpcion]}`)
-
+/* precio total */
 const total = (entree[entreeOpcion] + sides[sideOpcion])
 
 console.log(`èl total de este ${entreeOpcion} y {sideOpcion} será ${total}`)
