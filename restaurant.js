@@ -17,3 +17,4 @@ const menu = {
 */ mostrar menu*/
 function displayMenu() {
     console.log("Menu principal");
+    menu.main.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
