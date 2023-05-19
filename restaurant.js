@@ -1,39 +1,43 @@
-const menu = {
-    main: [
-        {name: "Pasta", price: 12},
-        {name: "Rissotto", price:14},
-    ],
-    side: [
-        {name: "Ensalada", price: 7},
-        {name: "Patatas", price: 6},
-    ],
-    comments: [
-        "Excente",
-        "Nuestra especialidad",
-    ],
-       
-    
+const entree ={
+  "percebes": 26,
+  "kokotxas": 24
 };
-*/ mostrar menu */
 
-function displayMenu() {
-    console.log("Menu principal");
-    menu.main.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
+const sides = {
+ "fritos": 9,
+ "tortilla": 12
+};
 
-     console.log("Menú Acompañamientos");
-    menu.side.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
-  }
-displayMenu();
+const menuItems = menu =>{
+  let menuString =[]
+  Object.keys(menu).map(item =>{
+    menuString.push(`${item}`)
+  })
+  return menuString.join()
+}
+ 
+const entreeComments ={
+  "percebes": "Excelente opcion",
+  "kokotxas": "La mejor opcion"
+}
 
-*/  calcular el precio total */
+const sidesComments ={
+  "fritos": "Autenticas croquetas",
+  "tortilla": "recien hecha"
+}
+console.log("Bienvenido al restaurante Bottega");
+console.log(`El menu de hoy es ${menuItems(entree)} y de acompañamiento ${menuItems(sides)}`)
 
-  function calculateTotal(mainPrice, side1Price, side2Price) {
-    return mainPrice + side1Price + side2Price;
-  }
+const entreeOpcion = prompt(¿Que desea?)
 
-/* obtener comentarios aleatorios */
+console.log(`el ${entreeOpcion} ${entreeComments[entreeOpcion]}`)
+console.log(`${entreeOpcion} es ${entree[entreeOpcion]}`)
 
-  function getRandomComment() {
-    return menu.comments[Math.floor(Math.random() * menu.comments.length)];
-  }
-  
+const sideOpcion = prompt("que quiere de acompañamiento?")
+
+console.log(`sidesComments[sidesOpcion]}`)
+console.log(`tu acompañamiento es ${sides[sideOpcion]}`)
+
+const total = (entree[entreeOpcion] + sides[sideOpcion])
+
+console.log(`èl total de este ${entreeOpcion} y {sideOpcion} será ${total}`)
